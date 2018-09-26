@@ -1,0 +1,13 @@
+<label>Name :</label>
+<input type="text" [formControl]="name">
+
+<p>
+  Value : {{name.value}}
+</p>
+
+<button type="button" (click)="updateName()">Update</button>
+<label style="color: red">Hello</label>
+
+<app-zippy (open)="onOpen($event)" (close)="onClose($event)"></app-zippy>
+<app-async-observable></app-async-observable>
+
